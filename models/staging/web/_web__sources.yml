@@ -10,6 +10,9 @@ sources:
       - name: transactions
         description: Contains a record per transaction made by customers
         columns:
+          - name: contact_id
+            tests:
+              - is_contact_valid
           - name: id
             tests:
               - unique
