@@ -4,7 +4,7 @@ with source as (
 ),
 
 renamed as (
-    select
+    select distinct
         id,
         username as user_name,
         name,
