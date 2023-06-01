@@ -14,6 +14,9 @@ sources:
             tests:
               - unique
               - not_null
+          - name: transaction_date
+            tests: 
+              - is_macro_timestamp_valid
           - name: category
             tests:
               - accepted_values:
