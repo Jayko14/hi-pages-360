@@ -9,3 +9,9 @@ models:
         tests:
           - not_null
           - unique
+  - name: customers
+    config:
+      materialized: table
+    columns:
+      - name: age
+        tests: is_macro_age_valid
